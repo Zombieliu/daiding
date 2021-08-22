@@ -2,11 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Index from '@/pages/Index.vue'
 import About from '@/pages/About.vue'
+import Home from '@/pages/Home.vue'
 
 const routes = [
   {
     path: '/',
-    component: Index,
+    component: Home,
     meta: {
       title: 'Vite + Vue + TypeScript + Tailwind Starter Template',
     },
@@ -16,6 +17,13 @@ const routes = [
     component: About,
     meta: {
       title: 'About',
+    },
+  },
+  {
+    path: '/home/',
+    component: Index,
+    meta: {
+      title: 'Home',
     },
   },
 ]
